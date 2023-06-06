@@ -51,7 +51,7 @@ class AnnonceController extends AbstractController
         /**
      * @Route("/show/{id}", name="annonce_show")
      */
-    public function showdetiel(Annonce $annonce): Response
+    public function showdetiel(Annonce $annonce)
     { 
         return $this->render('includes/show.html.twig',
         ['annonce' => $annonce]);
